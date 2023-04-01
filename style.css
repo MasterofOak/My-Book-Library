@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+*, *:before, *:after{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+	padding: 0;
+	border: 0;
+    font-family: 'Tilt Neon', cursive;
+}
+html,body{
+    color: white;
+    background-color: #F8EDE3;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    padding: 20px;
+    font-size: 1.1rem;
+    background-color: #85586F;
+}
+#add_btn{
+    border-radius: 10px;
+    background-color: #1D9929;
+    color: white;
+    width: 100px;
+    height: 40px;
+    box-shadow:  0px 0px 5px 2px rgba(0, 0, 0, 0.15);
+}
+.book_container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(auto-fit,1fr);
+    gap: 40px;
+    background-color: #F8EDE3;
+    height: 100%;
+    width: 100%;
+    padding: 20px 40px;
+}
+.book_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(208,184,168,1) 0%, rgba(223,211,195,1) 100%);
+    gap: 20px;
+    height: 300px;
+    box-shadow:  0px 0px 5px 1px rgba(0, 0, 0, 0.15);
+    padding-bottom: 10px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+.book_card div{
+    height: 50%;
+    width: 100%;
+    padding: 25% 0px;
+    font-size: 1.6rem;
+}
+.book_card > button{
+    height: 10%;
+    width: 80%;
+    border-radius: 14px;
+}
+.isRead{
+    background-color: #1D9929;
+}
+.notRead{
+    background-color: #FF101F;
+}
+.remove{
+    background-color: white;
+    transition: background-color 0.5s;
+}
+.remove:hover{
+    background-color: #FF101F;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    color: black;
+    top: 50%;
+    left: 50%;
+    gap: 20px;
+    transform: translate(-50%,-50%);
+    height: 350px;
+    width: 300px;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 10px;
+}
+#cls_btn{
+    height: 10px;
+    width: 10px;
+    background-color: transparent;
+    margin-left: 260px;
+    cursor: pointer;
+}
+input{
+    width: 100%;
+    height: 35px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #1D9929;
+    border: 1px solid black;
+}
+input[type="checkbox"]{
+    float: right;
+    width: 20px;
+    height: 20px;
+}

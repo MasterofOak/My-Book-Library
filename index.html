@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Book Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="form_hider" hidden>
+        <form method="get" class="form">
+            <div id="cls_btn">&#9733;</div>
+            <div class="form_field">
+                <label for="title">Title:</label>
+                <input required type="text" name="title" id="title" placeholder="Harry Potter">
+            </div>
+            <div class="form_field">
+                <label for="author">Author:</label>
+                <input required type="text" name="author" id="author" placeholder="J.K. Rowling">
+            </div>
+            <div class="form_field">
+                <label for="pages">Number of Pages:</label>
+                <input required type="number" name="pages" id="pages">
+            </div>
+            <div class="form_field">
+                <label for="isRead">Is it read?</label>
+                <input type="checkbox" name="isRead" id="isRead">
+            </div>
+            <input id="sub_btn" type="submit" value="Add">
+        </form>
+    </div>
+    <div class="header">
+        <h1 >My Book Library</h1>
+        <button id="add_btn" >Add Book</button>
+    </div>
+    <div class="book_container">
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
